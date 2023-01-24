@@ -10,11 +10,12 @@
     <style>
         p{
             border: 1px solid;
+            border-radius: 25px;
             height:35px;
-            width: 93%;
             margin: 2% 3% 2% 3%;
             background-color: rgb(175, 165, 233);
             text-align: center;
+            align-self: center;
 
         }
 
@@ -91,10 +92,10 @@
 
 <body>
     <div id="Div1">
-        <p>2</p>
-        <p>4</p>
-        <p>3</p>
-        <p>1</p>
+        <p style="width:65%">2</p>
+        <p style="width:95%">4</p>
+        <p style="width:80%">3</p>
+        <p style="width:50%">1</p>
     </div>
 
     <div id="Div2"></div>
@@ -176,7 +177,7 @@
         function newGame() {
         let parent = document.getElementById("Div1");
 
-        for (let i = 0; i < 4; i++) {
+        for (let i = 4; i > 0; i--) {
             parent.appendChild(parent.children[Math.floor(Math.random() * i )]);    
         }
 }
