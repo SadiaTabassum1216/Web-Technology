@@ -124,17 +124,16 @@
     <script>
          window.onload = newGame;
 
-        function func(a,b){
-            let removable=a.firstElementChild;
-            a.removeChild(a.firstElementChild);
-            b.insertBefore(removable,b.children[0]);
-        }
+         function checkNull(a){
+            let x=document.getElementById(a);
+            a.length
+         }
 
-        // function func(a,b){
-        //     let removable=a.lastElementChild;
-        //     a.removeChild(a.lastElementChild);
-        //     b.insertBefore(removable,b.children[3]);
-        // }
+        function func(a,b){
+         
+            if(b.children.length==0 || a.firstElementChild.innerHTML<b.firstElementChild.innerHTML)
+                b.insertBefore(a.firstElementChild,b.children[0]);
+        }
 
         function sequence(element) {
             
