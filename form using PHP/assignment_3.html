@@ -1,15 +1,73 @@
 <html>
 <head>
   <title>Form 1216</title>
-  <link rel="stylesheet" href="form.css">
+  <!-- <link rel="stylesheet" href="form.css"> -->
+  <style>
+    body {
+      background-color: #d3e0e4;
+      font-size: larger;
+      font-family: Arial, sans-serif;
+  }
+  label{
+    display:inline-block;
+    margin: 1px; 
+    width: 25%;
+    padding: 2px;
+    text-align: right; 
+    font-weight: bold;
+}
+
+h2{
+  padding: 20px;
+}
+
+input {
+  margin: 2px;
+  width: 69%;
+  height: 30px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #aaaaaa;
+}
+
+#fname,#lname{
+  width: 25%;
+}
+
+textarea{
+    width: 69.1%;
+    height: 150px;
+    vertical-align: top;
+}
+           
+button {
+  background-color: #e86a6a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 40%;
+  font-size: 17px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+#submit{
+    margin-left: 20px;
+    background-color: #04AA6D;
+   
+}
+
+
+button:hover {
+  opacity: 0.8;
+}        
+  </style>
 </head>
 <body>
   <h2>Enter your information:</h2><br>
   <form action="submit.php" method="post"  enctype="multipart/form-data">
     <label for="fname">First Name:</label>
-    <input type="text" id="fname" name="fname" required><br><br>
-
-    <label for="lname">Last Name:</label>
+    <input type="text" id="fname" name="fname" required>
+    <label for="lname" style="width: 17.4%;">Last Name:</label>
     <input type="text" id="lname" name="lname" required><br><br>
 
 
