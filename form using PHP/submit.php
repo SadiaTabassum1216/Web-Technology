@@ -24,6 +24,7 @@
   </head>
 <body>
 <div id="left">
+  
 <?php
   $fname = $_POST["fname"];
   $lname = $_POST["lname"];
@@ -40,7 +41,11 @@
 
  <div id="right">
  <?php 
- echo '<img src="'.$photo.'" alt="Image">';
+
+  $file_tmp = $_FILES['photo']['tmp_name'];
+  move_uploaded_file($file_tmp, "uploads/{$photo}");
+  echo "<img src='uploads/{$photo}' alt='Image'>";
+
  ?>
  </div>
 
