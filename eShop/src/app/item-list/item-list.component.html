@@ -1,0 +1,17 @@
+<br><br>
+<table>
+  <th>Name</th>
+  <th>price</th>
+  <th>quantity</th>
+  <th>Buy</th>
+  <th>Update</th>
+  <tr  *ngFor="let item of myItems; let i = index">
+    <td>{{ item.name }}</td>
+    <td>{{ item.price }}</td>
+    <td>{{ item.quantity }}</td>
+   <td> <button *ngIf="item.quantity > 0" (click)="requestItem(item.name)" class="btn btn-success">Buy</button>
+    <button *ngIf="item.quantity <= 0" class="btn btn-warning">Unavailable</button></td>
+   <td> <button (click)="updateItems(i)" class="btn btn-primary">Update</button></td>
+
+  </tr>
+</table>
