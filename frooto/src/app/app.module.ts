@@ -8,7 +8,7 @@ import { FruitFormComponent } from './fruit-form/fruit-form.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTableModule } from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { MatTableModule } from '@angular/material/table';
     RouterModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTableModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
