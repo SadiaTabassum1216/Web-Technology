@@ -1,0 +1,105 @@
+   #p{
+      width:50%;
+      float: left;
+      color:black
+        }
+   #img{
+      max-width: 30%;
+      max-height: 30%;
+      padding-top: 50px;
+      padding-right: 100px;
+      padding-bottom: 100px;
+      float:right;
+      border-radius: 50%;
+     }
+
+     #icon{
+      max-width: 25px;
+      max-height: 25px;
+      float: left;
+      border-radius: 50%;
+     }
+
+     #hobby{
+      padding: 100px;
+     }
+        
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(141, 194, 196);
+  border: 1px solid #e7e7e7;
+}
+
+#bg{
+  background-image: url('background.png');
+}
+
+body {
+  /* background-color: rgb(205, 231, 200); */
+  background-image: linear-gradient(to right, rgb(98, 163, 135) , rgb(214, 231, 233));
+}
+
+a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+a:hover:not(.active) {
+  background-color:cornflowerblue;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color:dimgray;              
+}
+
+.intro {
+  padding: 100px;
+  margin-left: 100px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  /* background-color:antiquewhite; */
+  width: 50%;
+}
+
+#footer_text{
+    text-align: center;
+    color:black;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+#result{
+  margin-left: 100px;
+  text-align:center;
+  font-size: large;
+}
+
+table,th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+#result tr:nth-child(even){background-color:rgb(181, 223, 203);}
+
+#result tr:hover {background-color:rgb(170, 167, 163);}
+
+#result th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  
+  background-color:rgb(109, 168, 129);
+}
+
